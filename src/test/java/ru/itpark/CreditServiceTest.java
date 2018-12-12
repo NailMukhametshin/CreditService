@@ -1,10 +1,12 @@
 package ru.itpark;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class CreditServiceTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void calculateCredit() {
         {
             CreditService creditService = new CreditService();
