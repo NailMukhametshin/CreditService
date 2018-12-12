@@ -8,7 +8,6 @@ public class CreditService {
         double intermediateValue = Math.pow(constant + monthlyInterestRate,creditPeriodMonth);
         double annuityRatio = (monthlyInterestRate*intermediateValue)/(intermediateValue - constant);
         double monthlyPayment = annuityRatio * creditAmount;
-        int result = (int) Math.round(monthlyPayment * creditPeriodMonth);
-        return result;
+        return (int)Math.round(monthlyPayment * creditPeriodMonth);
     }
 }
